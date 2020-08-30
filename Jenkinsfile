@@ -1,11 +1,5 @@
 pipeline {
-    agent {
-       // docker {
-         //   image 'azagramac/maven'
-       //     args '-v /root/.m2:/root/.m2'
-     //   }
-    }
-    
+   
     environment {
         // This can be nexus3 or nexus2 server
         NEXUS_VERSION = "nexus3"
@@ -19,7 +13,9 @@ pipeline {
         // Jenkins credential id to authenticate to Nexus OSS
         NEXUS_CREDENTIAL_ID = "nexuspw"
     }
-    
+	
+    agent any
+	
     stages {
         stage('Build') {
             steps {
