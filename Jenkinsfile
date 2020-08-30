@@ -43,7 +43,9 @@ pipeline {
     
 	currentBuild.result = 'SUCCESS'
         message = """
-        *Jenkins Build*
+	
+	// Jenkins Build
+	
         Job name: `${env.JOB_NAME}`
         Build number: `#${env.BUILD_NUMBER}`
         Build status: `${currentBuild.result}`
