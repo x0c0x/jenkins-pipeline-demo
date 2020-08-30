@@ -37,7 +37,7 @@ pipeline {
             stage('Slack Notification'){
              steps{
                 script{
-                slackSend channel: '#jenkins-build', color: 'Good', message: 'Welcome to Jenkins', tokenCredentialId: 'slacknotification'
+                slackSend channel: '#jenkins-build', color: 'Good', message: 'Welcome to Jenkins', tokenCredentialId: 'slackapi'
        //         slackSend color: 'good', message: 'Build is successfully completed', channel: '#jenkins-build'
       //          slackSend (color: 'good', channel: '#jenkins-build', message: "Completed: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (${env.BUILD_URL})")
  /*
