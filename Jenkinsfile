@@ -40,9 +40,9 @@ pipeline {
                 slackSend channel: '#jenkins-build', color: 'Good', message: 'Welcome to Jenkins', tokenCredentialId: 'slackapi'
        //         slackSend color: 'good', message: 'Build is successfully completed', channel: '#jenkins-build'
       //          slackSend (color: 'good', channel: '#jenkins-build', message: "Completed: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (${env.BUILD_URL})")
- /*
-	currentBuild.result = 'SUCCESS'
-        message = """	
+	
+			currentBuild.result = 'SUCCESS'
+			message = """	
 	// Jenkins Build
 	
         Job name: `${env.JOB_NAME}`
@@ -51,7 +51,6 @@ pipeline {
         Build details: <${env.BUILD_URL}/console|See in web console>
     """.stripIndent()
 	slackSend(color: 'good', message: message)
-*/
 		
 		}
 			        }
