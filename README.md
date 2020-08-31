@@ -6,11 +6,7 @@ About:
 ------
 This project repository is for my Jenkins related articles published on Dev.to platform.
 
-https://dev.to/raghwendrasonu/jenkins-multibranch-pipeline-19lh
-
-https://dev.to/raghwendrasonu/using-github-hooks-in-jenkins-trigger-a-jenkins-build-from-a-code-push-4o4o
-
-https://dev.to/raghwendrasonu/create-jenkins-pipeline-with-an-example-3p7j
+://dev.to/raghwendrasonu/create-jenkins-pipeline-with-an-example-3p7j
 
 First article is for automatically triggerring job execution for every branch, you have for your project repository. This solves the problem of creating new build for every new branch we create on the fly. 
 
